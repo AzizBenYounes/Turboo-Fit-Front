@@ -1,0 +1,81 @@
+.tshirts-container {
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.tshirts-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.tshirts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tshirt-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.tshirt-card:hover {
+  transform: scale(1.03);
+}
+
+.tshirt-card img {
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.tshirt-card h4 {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.tshirt-card p {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.tshirt-card select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.tshirt-card select:focus {
+  border-color: #0e0101;
+  outline: none;
+}
+
+.tshirt-card button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.tshirt-card button:hover {
+  background-color: #0056b3;
+}
