@@ -21,8 +21,7 @@ const CartPage = () => {
 
     if (user) {
       try {
-        // ONLY change: backend URL replaced
-        await axios.post(`${process.env.REACT_APP_API_URL}/cart`, { userId: user._id, items: updatedCart });
+        await axios.post("/api/cart", { userId: user._id, items: updatedCart });
       } catch (err) {
         console.error("Failed to save cart to backend", err);
       }
